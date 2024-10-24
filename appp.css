@@ -823,7 +823,6 @@ footer .content {
     }
 
     .nav-menu {
-        /* display: none; */
         position: absolute;
         top: 100%;
         left: -100%;
@@ -833,27 +832,61 @@ footer .content {
         height: 100vh;
         padding: 20px;
         transition: 0.3s ease-in-out;
-    
     }
-    
 
     .nav-menu li {
         margin: 10px 30px;
     }
-        .sidebar{
-            font-size: 15px;
-            margin-left: -25px;
-        }
+
+    .sidebar {
+        font-size: 15px;
+        margin-left: -25px;
+    }
 
     .nav-menu.active {
         left: 0;
     }
-        @media only screen and (max-width: 850px) {
-        .po p{
-            font-size: 20px;
-            /* Smaller size */
-            margin-left: 87px;
-            font-weight: 500;
-        }
+
+    /* Corrected nested media query */
+    .po p {
+        font-size: 70px;
+        /* Smaller size */
+        margin-left: 87px;
+        font-weight: 500;
+        line-height: 1.5;
     }
 }
+.po {
+    text-align: center;
+    /* Center the text by default */
+    padding: 20px;
+    /* Default padding */
+    font-size: 16px;
+    /* Default font size */
+    color: #333;
+    /* Default text color */
+
+}
+
+/* Media Query for iPhone 14 Pro Max and similar gadgets */
+@media (max-width: 430px) {
+    .po {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+        font-size: 18px;
+        /* Increase font size for better readability */
+        /* background-color: #f0f0f0; */
+        /* Optional: change background color */
+        border-radius: 8px;
+        /* Optional: add some rounding to the corners */
+        margin: 10px;
+        /* Add some margin */
+    }
+
+    .po p {
+        line-height: 1.5;
+        /* Adjust line height for better spacing */
+    }
+}
+
+

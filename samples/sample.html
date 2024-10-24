@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Media Query */
+    @media only screen and (max-width: 850px) {
+      .navbar {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items */
+      }
+
+      .nav-menu {
+        display: none;
+        /* Hide the nav menu initially */
+        flex-direction: column;
+        /* Stack menu items vertically */
+        position: absolute;
+        /* Position relative to the parent */
+        top: 60px;
+        /* Adjust based on your layout */
+        left: 0;
+        right: 0;
+        background-color: #000;
+        /* Background color for dropdown */
+        padding: 20px;
+        z-index: 10;
+        /* Ensure it appears above other elements */
+      }
+
+      .hamburger-menu.active + .nav-menu {
+        display: flex;
+        /* Show the nav menu when hamburger is active */
+      }
+
+      .toggle {
+        margin: 10px 0;
+        /* Add spacing between elements */
+        /* width: 100%; */
+        /* Adjust width as needed */
+        display: flex;
+        justify-content: center;
+        /* Center contents */
+      }
+      .search {
+        order: 1;
+        /* Ensure search is first */
+        width: 100%;
+        /* Full width */
+        margin-bottom: 10px;
+        /* Space below */
+      }
+    }
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .search {
+        order: 1;
+        /* Ensure search is first */
+        width: 100%;
+        /* Full width */
+        margin-bottom: 10px;
+        /* Space below */
+      }
+
+      .toggle {
+        order: 2;
+        /* Toggle comes next */
+        margin-bottom: 10px;
+        /* Space below */
+      }
+
+      .hamburger-menu {
+        display: block;
+        /* Show hamburger on small screens */
+        order: 3;
+        /* Last item */
+      }
+
+      .nav-menu {
+        display: none;
+        /* Hide initially; show on toggle */
+      }
+    }
+  </style>
+  <body></body>
+</html>
