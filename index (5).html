@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="c:\Users\HP\Downloads\1x\1x\pathtoyourlogo.png.png" type="DreamScreen">
+    <title>DreamScreen</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="appp.css">
+</head>
+
+<body>
+
+   
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Dream<span class="main-color">Scr</span>een
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="books.html">Book Now</a></li>
+                    <li><a href="come.html">Coming Soon</a></li>
+                     <li><a href="#">About Us</a></li>
+                  
+                    <li>
+                      <div class="search">
+                    <input id="searchinput" type="text" placeholder="Search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <div class="searchmatch" id="searchmatch">
+                    </div>
+                    <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                    
+                </div>
+                </div>
+                    </li>
+                </ul>
+               
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+              <div class="sidebar">
+        <i onclick="books()"class="left-menu-icon fas fa-home"></i>
+        <br>
+
+        <!-- <i class="left-menu-icon fas fa-users"></i> -->
+        <!-- <i class="left-menu-icon fas fa-bookmark"></i> -->
+        <i class="left-menu-icon fas fa-tv"></i>
+         <br>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+         <br>
+        <i onclick="books()"class="left-menu-icon fas fa-shopping-cart"></i>
+         <br>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        
+    </div>
+        
+    </div>
+        </div>
+    </div>
+    
+    <div class="hero-section">
+        
+        <div class="hero-slide">
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+               
+                <div class="hero-slide-item">
+                    <img src="images/dx488auox8t826f-74975f558dbe1cb9e7d31fa5ae7caee3.jpeg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Black Panther
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                            <div class="anny">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="hero-slide-item">
+                    <img src="images/xyokqdsmw6fh8su-0d86cd025ed0344d66b88e411b902e0c.jpeg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Supergirl
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                            <div class="item-content-description top-down delay-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide-item">
+                    <img src="images/fwrdh8z8svucd30-799e8c0468127648b5d2a1b7fa6286c6.jpeg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Wanda Vision
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                            <div class="item-content-description top-down delay-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <!-- <div class="top-movies-slide">
+            <div class="owl-carousel" id="top-movies-slide">
+             
+                <div class="movie-item">
+                    <img src="images/download (38).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Supergirl
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="movie-item">
+                    <img src="images/Truth Be Told.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Captain Marvel
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="movie-item">
+                    <img src="images/The Transporter Refueled (2015).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Infinity Train
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie-item">
+                    <img src="images/kep88ku99agra0g-bbba83374f920967ec562f96baf82c5a.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title"> 
+                            Bloodshot
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="movie-item">
+                    <img src="images/download (38).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Wanda Vision
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="movie-item">
+                    <img src="images/Furiosa A Mad Max Saga (2024).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Dark Knight
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+       
+    </div> -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+             NEW RELEASES
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+     
+                <a href="#" class="movie-item">
+                    <img src="images/Bad Boys for Life (2020).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           Bad boys
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>8.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>10 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                                    <button class="movie-item-button">Watch Trailer</button>
+                                
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </a>
+             
+                <a href="#" class="movie-item">
+                    <img src="images/12 O'Clock Boys (2013).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           12 O'Clock Boys
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>50 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+              
+                <a href="#" class="movie-item">
+                    <img src="images/crlykbxvkejlfbx-1b21b1c3a6d6726000f884099cd8e85f.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                        Farmers Bride
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>80 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="#" class="movie-item">
+                    <img src="images/Blue Story.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                         Blue Story
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="#" class="movie-item">
+                    <img src="images/84u638vpuo6k2hy-786054cd3ebfbc9dfcb6221398242404.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                        Hellboy
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+           
+                <a href="#" class="movie-item">
+                    <img src="images/crow.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                          The Crow
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>20 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/IF (1).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                         IF
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>90 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    <!-- END LATEST MOVIES SECTION -->
+
+    <!-- LATEST SERIES SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                latest series
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/download (54).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                       Avengers
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/kep88ku99agra0g-bbba83374f920967ec562f96baf82c5a.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                         Venom The Last Dance
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/download (53).jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                          Atlas
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/NETFLIX _ Night Teeth.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                       Night Teeth
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>7.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>5 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/Top 10 Romantic Movies of all Time.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                       Me Before U
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/PLAYERS.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           Players
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>10.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>8 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="images/Everything We Know About Netflix's New Horror Series _1899_.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                          1899
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    <!-- END LATEST SERIES SECTION -->
+
+    <!-- LATEST CARTOONS SECTION -->
+    
+                    </div>
+                    <div class="po">
+    <p>Action, camera, thrill  <br>
+        -only at DreamScreen!</p>
+        <!-- <h1>Get the app</h1> -->
+ </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SPECIAL MOVIE SECTION -->
+
+    <!-- PRICING SECTION -->
+    <!-- <div class="section">
+        <div class="container">
+            <div class="pricing">
+                <div class="pricing-header">
+                    Fl<span class="main-color">i</span>x pricing
+                </div>
+                <div class="pricing-list">
+                    <div class="row">
+                        <div class="col-4 col-md-12 col-sm-12">
+                            <div class="pricing-box">
+                                <div class="pricing-box-header">
+                                    <div class="pricing-name">
+                                        Basic
+                                    </div>
+                                    <div class="pricing-price">
+                                        Free
+                                    </div>
+                                </div>
+                                <div class="pricing-box-content">
+                                    <p>Originals</p>
+                                    <p>Swich plans anytime</p>
+                                    <p><del>65+ top Live</del></p>
+                                    <p><del>TV Channels</del></p>
+                                </div>
+                                <div class="pricing-box-action">
+                                    <a href="#" class="btn btn-hover">
+                                        <span>Register now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-12 col-sm-12">
+                            <div class="pricing-box hightlight">
+                                <div class="pricing-box-header">
+                                    <div class="pricing-name">
+                                        Premium
+                                    </div>
+                                    <div class="pricing-price">
+                                        $35.99 <span>/month</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-box-content">
+                                    <p>Originals</p>
+                                    <p>Swich plans anytime</p>
+                                    <p><del>65+ top Live</del></p>
+                                    <p><del>TV Channels</del></p>
+                                </div>
+                                <div class="pricing-box-action">
+                                    <a href="#" class="btn btn-hover">
+                                        <span>Register now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-12 col-sm-12">
+                            <div class="pricing-box">
+                                <div class="pricing-box-header">
+                                    <div class="pricing-name">
+                                        VIP
+                                    </div>
+                                    <div class="pricing-price">
+                                        $65.99 <span>/month</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-box-content">
+                                    <p>Originals</p>
+                                    <p>Swich plans anytime</p>
+                                    <p><del>65+ top Live</del></p>
+                                    <p><del>TV Channels</del></p>
+                                </div>
+                                <div class="pricing-box-action">
+                                    <a href="#" class="btn btn-hover">
+                                        <span>Register now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- END PRICING SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <!-- <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                        </a> -->
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis beatae 
+                             <br>
+                            earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et. Dolores, quibusdam?
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Flix</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/Frame_137_e7spmy.png" width="150px">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/Frame_138_bjzkne.png" width="150px">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        Copyright 2021 <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">
+            Tuat Tran Anh</a>
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="appp (2).js"></script>
+
+</body>
+
+</html>
