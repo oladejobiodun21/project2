@@ -45,6 +45,7 @@ header .shopping span{
     box-shadow: 0 50px 50px #757676;
     letter-spacing: 1px;
 }
+
 .list .item img{
     width: 110%;
     height: 430px;
@@ -72,7 +73,7 @@ header .shopping span{
     transition: 0.5s;
 }
 .active .card{
-    left: calc(100% - 500px);
+    left: calc(100% - 450px);
 }
 .active .container{
    transform: translateX(-200px);
@@ -132,6 +133,7 @@ header .shopping span{
 .width{
     margin-top: +100px;
 }
+
 @media only screen and (max-width: 850px) {
     html {
         font-size: 12px;
@@ -168,12 +170,13 @@ header .shopping span{
 
 @media only screen and (max-width: 600px) {
     .list {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
         /* Single column for small screens */
     }
 
     .list .item {
         margin-bottom: 20px;
+        
         /* Space between items */
     }
 
@@ -185,9 +188,73 @@ header .shopping span{
         margin-left: 150px;
         /* Adjust card positioning */
     }
+    .card .item{
+        margin-left: -30px;
+    }
 
     .card.active {
-        left: 0;
+        margin-left: 120px;
+
         /* Ensure the active card shows properly */
     }
 }
+@media only screen and (max-width: 600px) {
+    .listCard {
+        padding: 10px;
+        /* Add padding for better spacing */
+    }
+
+    .listCard li {
+        display: flex;
+        /* Use flexbox for layout */
+        align-items: center;
+        /* Center items vertically */
+        justify-content: space-between;
+        /* Space items evenly */
+        margin-bottom: 10px;
+        /* Space between items */
+    }
+
+    .listCard li div {
+        flex: 1;
+        /* Allow flexible growth for product name and image */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .listCard li img {
+        width: 60px;
+        /* Smaller image for mobile */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-right: 10px;
+        /* Space between image and text */
+    }
+
+    .listCard li .count {
+        margin: 0 5px;
+        /* Adjust space around count */
+    }
+
+    .listCard li button {
+        background-color: #E8BC0E;
+        /* Change button color for better visibility */
+        color: #fff;
+        /* Ensure text is readable */
+        padding: 5px 10px;
+        /* Add padding for better touch targets */
+        border: none;
+        /* Remove default border */
+        border-radius: 5px;
+        /* Round button corners */
+        cursor: pointer;
+        /* Indicate that it's clickable */
+    }
+
+    .listCard li button:hover {
+        background-color: #D1A700;
+        /* Change color on hover */
+    }
+    
+}
+

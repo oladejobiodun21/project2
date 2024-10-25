@@ -882,6 +882,10 @@ footer .content {
         margin: 10px;
         /* Add some margin */
     }
+    .po p{
+        font-size: 34px;
+        margin-left: -28px;
+    }
 
     /* .po p { */
         /* line-height: 1.5; */
