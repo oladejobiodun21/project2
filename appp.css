@@ -555,7 +555,7 @@ footer a.logo:hover {
 }
 .po p {
     font-weight: 100;
-    margin-left: 170px;
+    margin-left: 80px;
     margin-top: 90px;
     font-size: 93px;
     font-family: "Poppins", sans-serif;
@@ -839,9 +839,13 @@ footer .content {
     }
 
     .sidebar {
-        font-size: 15px;
-        margin-left: -25px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: -21px;
+        background-color: red;
+        width: 27px;
     }
+
 
     .nav-menu.active {
         left: 0;
@@ -884,7 +888,7 @@ footer .content {
     }
     .po p{
         font-size: 34px;
-        margin-left: -28px;
+        margin-left: -12px;
     }
 
     /* .po p { */
