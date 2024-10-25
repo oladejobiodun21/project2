@@ -735,7 +735,7 @@ footer .content {
   }
 
   .sidebar {
-      width: 50px;
+      width: 30px;
       height: 100%;
       background-color: rgb(0, 0, 0);
       position: fixed;
@@ -767,6 +767,15 @@ footer .content {
     height: 30vh;
     margin-top: 30px;
 }
+.anny.active{
+    color: white;
+}
+ .themd span {
+    color: white;
+  }
+  .item-content-wraper{
+    color: white;
+  }
 
 /* RESPONSIVE */
 
@@ -808,6 +817,18 @@ footer .content {
 
     .hero-slide-item-content {
         position: relative;
+    }
+    .logo{
+        margin-top: -20px;
+    }
+    .anny{
+        color: white;
+    }
+    .themd span{
+        color: white;
+    }
+    .item-content-wraper{
+        color: white;
     }
 
     .hero-slide-item img {
