@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="c:\Users\HP\Downloads\1x\1x\pathtoyourlogo.png.png" type="DreamScreen">
+    <title>DreamScreen</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="appp.css">
+    <link rel="stylesheet" href="sop.css">
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    .me {
+        width: 60vh;
+    transition: all 1s ease-in-out;
+    transition: transform 0.3s linear;
+   /* border-top-right-radius: 50px;
+    border-top-left-radius: 50px; */
+        image-resolution: 1000px;
+  
+}
+.movie-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+     /* margin-left: +470px; */
+}
+
+.movie-info span {
+    margin-left: 5px;
+}
+
+.movie-info i {
+    color: var(--main-color);
+   
+}
+
+#hero-carousel{
+    /* margin-left: +150px; */
+}
+
+.movie-info ~ .movie-info {
+    margin-left: 5px;
+}
+   .them {
+      width: 70vh;
+      margin-top: 0px;
+      image-resolution: 500px;
+    
+    }
+    .me{
+         margin-left: 90px;
+         margin-top: 30px;
+          border-radius: 7%;
+            z-index: 999999;
+    }
+    /* .item-content-title {
+    font-size: 5rem;
+    line-height: 5rem;
+    row-gap: 2px;
+    font-weight: 900;
+    margin-left: 520px;
+    padding-left: 450px;
+    padding: auto;
+   
+} */
+/* .movie-infos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: calc(var(--space-top) / 2);
+    margin-left: 410px;
+} */
+/* .anny {
+    margin-left: 430px;
+    font-weight: bold; 
+} */
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.683);
+}
+.item-content-wraper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+/* ul {
+      margin: 300px 200px;
+      padding: 0;
+      display: flex;
+    }
+    ul li {
+      list-style: none;
+      padding: 20px 50px;
+      margin-left: 80px;
+    }
+    ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 23px;
+      color: white;
+      z-index: 2;
+      position: fixed; */
+
+      /* margin-top: -500px; */
+    /* } */
+    .hii {
+      margin-top: -910px;
+      margin-left: 40px;
+      z-index: 2;
+    }
+    .them {
+      border-radius: 7%;
+      width: 70vh;
+      margin-left: 80px;
+      margin-top: -60px;
+      image-resolution: 500px;
+    }
+    .us {
+      background-color: red;
+      width: 100%;
+      width: 100%;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 15%;
+      position: fixed;
+    }
+    .navbar p {
+      color: chartreuse;
+      font-size: 2em;
+      margin-left: 50px;
+    }
+    .overlay h1 {
+      color: rgb(255, 255, 255);
+      font-size: 3em;
+      font-weight: bold;
+      left: 0;
+      margin-top: 300px;
+      margin-left: 530px;
+    }
+    .overlay h2 {
+      color: rgb(255, 255, 255);
+      font-size: 1.5em;
+      left: 0;
+      margin-left: 530px;
+    }
+    .overlay p {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: LIGHT;
+      left: 0;
+      margin-left: 530px;
+    }
+    .CAST h1 {
+      color: rgb(255, 255, 255);
+      margin-left: 530px;
+      margin-top: -170px;
+      letter-spacing: 7px;
+      position: relative;
+      z-index: 9;
+    }
+    .SOW {
+      width: 10vh;
+      margin-left: 540px;
+      border-radius: 10%;
+      margin-top: 30px;
+       position: relative;
+      z-index: 9;
+    }
+    .SOWs {
+      width: 10vh;
+      margin-left: 630px;
+      border-radius: 10%;
+       position: relative;
+      z-index: 9;
+    }
+    .SOWss {
+      width: 10vh;
+      margin-left: 720px;
+      border-radius: 10%;
+       position: relative;
+      z-index: 9;
+    }
+    .cases {
+      margin-top: -110px;
+    }
+    .casess {
+      margin-top: -110px;
+    }
+    .case p {
+      font-size: 13px;
+      color: white;
+      margin-left: 540px;
+      margin-top: 20px;
+    }
+    .cases p {
+      font-size: 13px;
+      color: white;
+      margin-top: 19px;
+      margin-left: 630px;
+    }
+    .casess p {
+      font-size: 13px;
+      color: white;
+      margin-top: 19px;
+      margin-left: 720px;
+    }
+    .yup p {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: lighter;
+      margin-top: 150px;
+      margin-left: 90px;
+      letter-spacing: 5px;
+    }
+    .Show p {
+      color: white;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: lighter;
+      margin-top: -100px;
+      margin-left: 40px;
+      letter-spacing: 5px;
+    }
+    .Shows {
+      display: flex;
+      background: #ffffff;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 12px;
+      /* border-style: outset;
+    border-width: 3px;
+    border-color: #4dbf00; */
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      width: 27vh;
+      margin-left: 40px;
+      margin-top: 30px;
+    }
+    .Shows:hover {
+      background-color: black;
+      border-style: outset;
+      border-width: 3px;
+      border-color: #ffffff;
+    }
+    .item-texts {
+      color: rgb(0, 0, 0);
+      margin-left: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .item-texts:hover {
+      color: white;
+    }
+    .Showss {
+      display: flex;
+      background: #ffffff;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 12px;
+      /* border-style: outset;
+    border-width: 3px;
+    border-color: #4dbf00; */
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      width: 27vh;
+      margin-left: 228px;
+      margin-top: -43px;
+    }
+    .Showss:hover {
+      background-color: black;
+      border-style: outset;
+      border-width: 3px;
+      border-color: #ffffff;
+    }
+    .select-menu{
+        margin-left: 40px;
+    }
+    .custom-select{
+        margin-left: 210px;
+    }
+    .item-textss {
+      color: rgb(0, 0, 0);
+      margin-left: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .item-textss:hover {
+      color: white;
+    }
+    @media only screen and (max-width: 1280px) {
+      html {
+        font-size: 14px;
+      }
+
+      .section {
+        padding-top: 50%;
+      }
+      .section {
+        height: 100%;
+      }
+
+      .item-content-wraper {
+        width: 50%;
+      }
+      html {
+        font-size: 14px;
+    }
+
+    .hero-slide-item {
+    padding-top: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+    .item-content-wraper {
+        width: 50%;
+    }
+}
+
+
+    
+   
+    
+
+
+/* .movie-info{
+      margin-left: 450px;
+} */
+@media only screen and (max-width: 850px) {
+
+  .item-content-title {
+        font-size: 2.5rem;
+       margin-left: -400px;
+       margin-top: 70px;
+    }
+    .anny{
+        margin-top: -90px;
+         margin-left: -200px;
+    }
+    .movie-info span {
+         margin-left: 5px;
+    }
+    .movie-info i {
+        margin-left: -60px;
+    }
+    .movie-info ~ .movie-info {
+        margin-left: 30px;
+         margin-top: -300px;
+         
+    }
+    .movie-info .bxs-star{
+        color: red;
+        margin-top: -300px;
+    }
+    .yud{
+        color: rgb(255, 255, 255);
+        margin-top: 5px;
+    }
+    .yuds{
+        color: rgb(255, 255, 255);
+        margin-top: 7px;
+      padding-left: -90px;
+    }
+   
+    
+   
+    .movie-infos{
+        margin-top: 100px;
+         display: flex;
+         align-items: center;
+       flex-wrap: wrap;
+        margin-left: -130px;
+        padding-top: 50px;
+    
+    }
+    .movie-info .yudss{
+        color: rgb(255, 255, 255);
+         margin-top: -300px;
+         margin-left: +2px;
+    }
+    .movie-info{
+       /* padding-top: 50px; */
+    }
+    .bxs-star{
+        margin-top: -150px;
+    }
+    .hero-slide-item-content{
+           margin-left: -200px;
+    }
+    /* .item-action{
+         margin-left: -200px;
+    }
+  */
+
+     .hero-slide-item-content,
+/* .item-content-wraper, */
+.item-content-title,
+/* .movie-infos, */
+/* .movie-info, */
+/* .anny, */
+.bxs-star,
+.item-actio{
+    margin-left: -200px;
+    margin-top: 30px;
+
+}
+    }
+
+   
+
+.item-content-wraper {
+    padding-left: 5rem;
+    width: 40%;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: 520px;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+.yup{
+    margin-top: -90px;
+    margin-left: -50px;
+}
+.me {
+    margin-top: -190px;
+    margin-left: 20px;
+    position: relative; /* or absolute/fixed depending on your layout */
+    z-index: 10; /* or a higher value to ensure it's on top */
+}
+/* .overlay{
+    width: 70%;
+     margin-left: -30px;
+} */
+
+</style>
+<body>
+
+   
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Dream<span class="main-color">Scr</span>een
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="books.html">Book Now</a></li>
+                    <li><a href="come.html">Coming Soon</a></li>
+                     <li><a href="#">About Us</a></li>
+                    <li>
+                </div>
+                </div>
+                    </li>
+                   </ul>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        
+    </div>
+        </div>
+    </div>
+    
+    <div class="hero-section">
+        
+        <div class="hero-slide">
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+               
+                <div class="hero-slide-item">
+                    <img src="images/dx488auox8t826f-74975f558dbe1cb9e7d31fa5ae7caee3.jpeg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                           Avengers
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span class="yudss">9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span class="yud">16+</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span class="yuds">HD</span>
+                                </div>
+                            </div>
+                            <div class="anny">
+                                While struggling with his dual identity, 
+                                <br>
+                                Arthur Fleck not only stumbles upon true love,
+                                <br>
+                                 but also finds the music that's always been inside him.
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="https://youtu.be/gmzKfLTZ-T0" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch trainer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- <div class="hero-slide-item">
+                    <img src="images/xyokqdsmw6fh8su-0d86cd025ed0344d66b88e411b902e0c.jpeg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                             Farmers bride
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                            
+                            <div class="anny">
+                                Set in 1980s Ibadan, Odun, a wealthy lonely farmer with no surviving family save for his late brother’s widow Morenike and her son Femi, decides to marry a young bride Funmi from the neighboring village.
+                            </div>
+                            <div class="item-action top-down delay-6">
+                              <a href="https://youtu.be/gmzKfLTZ-T0" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="opend">
+                           <img src="c:\Users\HP\Downloads\aseet4.jpeg" class="them" />
+                              </div> -->
+                            </div>
+                        </div>
+                     </div>
+                     <section class="iam">
+                        <div class="me">
+                            <img src="image/Black_Adam.jpg" class="me">
+                        </div>
+                     </section>
+                      </div>
+    <div class="CAST">
+      <h1>CAST</h1>
+    </div>
+    <div class="case">
+      <img
+        src="imagess/MV5BMjE3OTE1NTUzNV5BMl5BanBnXkFtZTgwNDY5ODc5OTE@._V1_QL75_UX140_CR0,13,140,140_.jpg"
+        class="SOW"
+      />
+      <p>Iretioluwa</p>
+    </div>
+    <div class="cases">
+      <img
+        src="imagess/MV5BN2ZiMDJiOGYtMTQ3ZC00MDEwLWFmNTUtMzExNDFkNjRiOTU3XkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+        class="SOWs"
+      />
+      <p>Efa Iwara</p>
+    </div>
+    <div class="casess">
+      <img
+        src="imagess/MV5BN2ZiMDJiOGYtMTQ3ZC00MDEwLWFmNTUtMzExNDFkNjRiOTU3XkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+        class="SOWss"
+      />
+      <p>Ebunoluwa</p>
+    </div>
+    <div class="yup">
+      <p>Select Location</p>
+    </div>
+    <div class="select-menu">
+      <div class="select-btn">
+        <span class="sBtn-text">Lagos</span>
+        <i class="bx bx-chevron-down"></i>
+      </div>
+
+      <ul class="options">
+        <li class="option">
+          <span class="option-text">Kaduna</span>
+        </li>
+        <li class="option">
+          <!-- <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i> -->
+          <span class="option-text">Abuja</span>
+        </li>
+        <li class="option">
+          <!-- <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i> -->
+          <span class="option-text">Abeokuta</span>
+        </li>
+        <li class="option">
+          <!-- <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i> -->
+          <span class="option-text">Oyo state</span>
+        </li>
+      </ul>
+    </div>
+    <div class="custom-select">
+      <div class="custom-btn">
+        <span class="btn-text">Today</span>
+        <i class="bx bx-chevron-down"></i>
+      </div>
+
+      <ul class="custom-options">
+        <li class="custom-option">
+          <span class="option-text">Oct,Tue 22</span>
+        </li>
+        <li class="custom-option">
+          <span class="option-text">Oct,Wed 23</span>
+        </li>
+        <li class="custom-option">
+          <span class="option-text">Oct,Thu 24</span>
+        </li>
+        <li class="custom-option">
+          <span class="option-text">Oct,Fri 25</span>
+        </li>
+      </ul>
+    </div>
+    <div class="Show">
+      <p>Select a Show Time</p>
+    </div>
+    <div class="Shows">
+      <span class="item-texts">4:00 AM - Premium</span>
+    </div>
+    <div class="Showss">
+      <span onclick="book()" class="item-textss">7:00 AM - Premium</span>
+    </div>
+  
+
+    <!-- <div class="text">
+        <p>A Night In 2005</p>
+    </div> -->
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="appp (2).js"></script>
+     <script src="sop.js"></script>
+    <script src="sops.js"></script>
+
+</body>
+
+</html>
