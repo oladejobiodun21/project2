@@ -618,7 +618,13 @@ footer .content {
     background-color: var(--box-bg);
     text-align: center;
 }
+/* Initially hide the video for small screens */
+#vid {
+    display: block;
+    /* Default to display */
+}
 
+/* Media query for smaller screens *
 
 /* RESPONSIVE */
 
@@ -676,6 +682,7 @@ footer .content {
     .hero-slide-item img {
         height: 100%;
     }
+    
 
     .item-content-title {
         font-size: 3rem;

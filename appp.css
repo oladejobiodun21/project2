@@ -671,9 +671,12 @@ footer .content {
     color: black;
 }
 .nav-menu.active {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
+/* #nav-menu.active{
+    background-color: black;
+} */
 
 .movieName {
     color: black;
@@ -691,9 +694,32 @@ footer .content {
     margin-left: 110px;
     margin-top: -25px;
 }
+.toggles {
+
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 6px;
+}
 
 .toggle-icon {
-    color: goldenrod;
+    color: rgb(233, 195, 98);
+}
+.toggle-balls {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(147, 13, 13);
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
 }
 
 .toggle-ball {
@@ -707,10 +733,13 @@ footer .content {
     transition: 1s ease all;
 }
  .toggle.active {
-     background-color: black;
+     background-color: rgb(0, 0, 0);
+ }
+ .toggles.active {
+     background-color: rgb(0, 0, 0);
  }
 
- .toggle-ball.active {
+ .toggle-balls.active {
      background-color: white;
      transform: translateX(-20px);
  }
@@ -718,6 +747,7 @@ footer .content {
       background-color: white;
       transform: translateX(-20px);
   }
+  
   .movie-item-button {
       text-decoration: none;
       padding: 10px;
@@ -733,6 +763,51 @@ footer .content {
       opacity: 5;
       transition: 1s all ease-in-out;
   }
+
+
+  .movie-image {
+      display: block;
+      width: 100%;
+      /* Responsive image */
+      transition: opacity 0.3s ease;
+      /* Smooth transition for opacity */
+  }
+
+  /* .movie-item-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  } */
+
+  /* Initially hide the "Watch Trailer" button */
+  .movie-item-button {
+      display: none;
+      /* Hidden by default */
+  }
+
+  /* Show the button and dim the image on hover */
+  .movie-item:hover .movie-image {
+      opacity: 0.3;
+      /* Dim the image on hover */
+  }
+
+  .movie-item:hover .movie-item-button {
+      display: block;
+      /* Show button on hover */
+  }
+  /* .movie-item:hover .movie-item-button{
+    display: block;
+  }
+.movie-item:hover .movie-image{
+opacity: 0.3;
+} */
 
   .sidebar {
       width: 30px;
@@ -776,6 +851,7 @@ footer .content {
   .item-content-wraper{
     color: white;
   }
+  
 
 /* RESPONSIVE */
 
@@ -866,6 +942,10 @@ footer .content {
         /* background-color: red; */
         width: 27px;
     }
+        .movie-item-button {
+            margin-left: -50px;
+            font-size: 10px;
+        }
 
 
     .nav-menu.active {
@@ -911,6 +991,20 @@ footer .content {
         font-size: 34px;
         margin-left: -12px;
     }
+    .search{
+        display: none;
+    }
+        .nav-menu.active {
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+        .nav{
+            padding-right: 30px;
+        }
+       
+        /* .toggle-sm{
+            display: block;
+        } */
 
     /* .po p { */
         /* line-height: 1.5; */
