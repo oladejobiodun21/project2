@@ -714,7 +714,7 @@ footer .content {
 .toggle-balls {
     width: 18px;
     height: 18px;
-    background-color: rgb(147, 13, 13);
+    background-color: rgb(0, 0, 0);
     position: absolute;
     right: 1px;
     border-radius: 50%;
@@ -960,6 +960,8 @@ opacity: 0.3;
         font-weight: 500;
         line-height: 1.5;
     }
+       
+    
 }
 .po {
     text-align: center;
@@ -1001,6 +1003,10 @@ opacity: 0.3;
         .nav{
             padding-right: 30px;
         }
+        /* .toggles{
+           margin-left: -100px;
+        } */
+        
        
         /* .toggle-sm{
             display: block;
