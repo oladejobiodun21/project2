@@ -560,7 +560,7 @@ footer a.logo:hover {
     font-size: 93px;
     font-family: "Poppins", sans-serif;
     background: linear-gradient(to right, #ff5757, #4dbf00, #fff100, #9ae900, #15ffe1, #818181, #25484a);
-    -webkit-background-clip: text;
+   -webkit-background-clip: text;
     -webkit-text-stroke: 0.1em transparent
 }
 
