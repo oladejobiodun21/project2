@@ -310,6 +310,7 @@
         height: 40vh;
        margin-left: -50px;
        width: 120%;
+         position: absolute;
 }
 
 .nav {
@@ -332,8 +333,9 @@
         /* margin-left: -50px; */
       }
       .nav-menu a{
-       padding-right: 70px;
+       padding-right: 20px;
        text-decoration: none;
+       margin-left: 70px;
       }
 
       .back-arrow {
@@ -346,6 +348,30 @@
         margin-left: 30px;
         
       }
+      .pp{
+        width: 30vh;
+        height: 30vh;
+        
+      }
+      .ppp{
+        width: 30vh;
+        height: 30vh;
+        
+      }
+       .pppp{
+        width: 30vh;
+        height: 30vh;
+        
+        
+      }
+      .ppppp{
+        width: 30vh;
+        height: 30vh;
+        
+        
+      }
+
+
 
       .title {
         position: absolute;
@@ -368,7 +394,147 @@
         color: #61dafb;
         display: flex;
       }
+@media only screen and (max-width: 600px) {
+  .content{
+    width: 100%;
+    height: 20vh;
     
+  }
+  .logo{
+    font-size: 20px;
+    margin-left: 20px;
+    font-size: bold;
+  }
+  .nav-menu{
+    font-size: 9px;
+    white-space: nowrap;
+    margin-left: -70px;
+    display: flex;
+        gap:5px;
+        margin-right: 10%;
+        text-decoration: none;
+      /* padding-left: 70px; */
+      
+   /* flex-wrap: nowrap; */
+    
+  }
+  .nav-menu a {
+   display: flex;
+    padding-right: 64px;
+       text-decoration: none;
+       margin-right: -100px;
+    /* padding-left: -70px; */
+ 
+   }
+   .checkout-section{
+    width: 30vh;
+    height: 20vh;
+    margin-top: 300px;
+    margin-left: -10px;
+   }
+   .checkout-item h1{
+    font-size: 20px;
+   }
+   .title{
+    font-size:  30px;
+      white-space: nowrap;
+      margin-left: 70px;
+   }
+   .them h2{
+    white-space: nowrap;
+    font-size: 24px;
+    margin-left: -10px;
+   }
+    .sections{
+    width: 25vh;
+        height: 23vh;
+        margin-left: -7px;
+       
+   }
+    .price-containers img {
+   margin-left:10px;
+  
+   }
+   .pp{
+        width: 18vh;
+        height: 15vh;
+        
+      }
+      .ppp{
+        width: 18vh;
+        height: 15vh;
+        
+        
+      }
+       .pppp{
+        width: 18vh;
+        height: 15vh;
+      }
+      .ppppp{
+        width: 18vh;
+        height: 15vh;
+      }
+      
+     
+      .price-containers h1{
+        font-size: 15px;
+        margin-top: 2px;
+        margin-left: 20px;
+      }
+      .price-containerss h1{
+        font-size: 15px;
+        margin-top: 2px;
+        margin-left: 14px;
+      }
+      .price-containers p{
+        margin-top: -4px;
+      }
+       .price-containerss p{
+        margin-top: -4px;
+      }
+      .price-containerss{
+        width: 25vh;
+        height: 23vh;
+        margin-left: 270px;
+        margin-top: -200px;
+      }
+       .price-containersss{
+        width: 25vh;
+        height: 23vh;
+        margin-left: -5px;
+        margin-top: 140px;
+       
+      }
+      .price-containersssss{
+        width: 25vh;
+        height: 23vh;
+        margin-left: -5px;
+        margin-left: 270px;
+        /* background-color: red; */
+        margin-top: 140px;
+       
+      }
+      .price-containersss h1{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 14px;
+      }
+      .price-containersss p{
+        margin-top: -4px;
+        margin-left: 40px;
+      }
+     .price-containersssss h1{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 20px;
+      }
+      .price-containersssssp{
+        margin-top: -4px;
+        margin-left: 40px;
+      }
+    
+  
+}
     
 
 
@@ -455,15 +621,14 @@
       <div class="sections" id="food-sections">
         <!-- Food Item 1 -->
         <div class="price-containers">
-          <img
-            src="c:\Users\HP\Downloads\2.PNG.png"
-            alt="Food Item"
-            style="width: 200px; height: 30vh"
-          />
+         <img src="c:\Users\HP\Downloads\2.PNG.png" alt="" class="pp">
+           
+        
           <h1>
             Fanta Orange <br />
             60 cl
           </h1>
+           <!-- style="width: 200px; height: 30vh" -->
           <p>#1,800</p>
           <div class="controlss">
             <span class="minuss" onclick="updateFoodCount(-1, 0)"
@@ -478,7 +643,8 @@
 
         <!-- Food Item 2 -->
         <div class="price-containerss">
-          <img src="4.PNG" alt="Food Item" style="width: 200px; height: 30vh" />
+        <img src="c:\Users\HP\Downloads\2.PNG.png" alt="" class="ppp">
+           
           <h1>
             Large Popcorn - <br />
             Salt
@@ -497,11 +663,8 @@
 
         <!-- Food Item 3 -->
         <div class="price-containersss">
-          <img
-            src="c:\Users\HP\Downloads\51555479ba7ddeaf7f21083ca318e25c.png"
-            alt="Food Item"
-            style="width: 200px; height: 30vh"
-          />
+            <img src="c:\Users\HP\Downloads\2.PNG.png" alt="" class="pppp">
+          
           <h1>
             Coca-Cola Coke <br />
             60 cl
@@ -519,7 +682,7 @@
         </div>
 
         <!-- Food Item 4 -->
-        <div class="price-containerssss">
+        <!-- <div class="price-containerssss">
           <img
             src="c:\Users\HP\Downloads\pofcabgux00vbhh-21136fc6a9990e758031d9bde2f3d8fe.png"
             style="width: 200px; height: 30vh"
@@ -538,14 +701,11 @@
             <span class="pluss" onclick="updateFoodCount(1, 3)"
               ><i class="fas fa-plus-circle"></i
             ></span>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="price-containersssss">
-        <img
-          src="c:\Users\HP\Downloads\c35cbb0eea0c6401c773ee9a1be6998b.png"
-          style="width: 200px; height: 30vh"
-        />
+          <img src="c:\Users\HP\Downloads\2.PNG.png" alt="" class="ppppp">
         <h1>Water - 75cl</h1>
         <p>#1,200</p>
         <div class="controlss">
