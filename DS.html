@@ -298,6 +298,7 @@
         100% {
           transform: translateY(0);
         }
+        
       }
     .content {
  background-image: url(imagess/aseet4.jpeg);
@@ -405,6 +406,7 @@
   .content{
     width: 107%;
     height: 20vh;
+    overflow-x: hidden;
     
   }
   .logos{
@@ -458,11 +460,24 @@
     width: 25vh;
         height: 23vh;
         margin-left: -7px;
+        
        
    }
     .price-containers img {
    margin-left:10px;
   
+   }
+   .price-containerss img{
+    margin-left: 18px;
+   }
+   .price-containersss img{
+    margin-left:10px;
+   }
+   .price-containerssss img{
+    margin-left:10px;
+   }
+   .price-containersssss img{
+     margin-left: 18px;
    }
    .pp{
         width: 18vh;
@@ -470,19 +485,27 @@
         
       }
       .ppp{
-        width: 18vh;
+        width: 15vh;
         height: 15vh;
         
         
       }
-       .pppp{
+        .pppp{
         width: 18vh;
         height: 15vh;
+         margin-left: -25px;
       }
-      .ppppp{
+       .ppppp{
         width: 18vh;
         height: 15vh;
+       margin-left: -25px;
+   
       }
+      /* .sections-ppppp{
+        margin-left: 90px;
+      }
+    */
+    
       .pop{
         width: 18vh;
         height: 15vh;
@@ -565,9 +588,123 @@
         margin-top: -4px;
         margin-left: 40px;
       }
+       body {
+    overflow-x: hidden;
+  }
+   #final-price{
+    margin-top: 390px;
+    height: 10vh;
+   }
+     
     
   
 }
+
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+body {
+
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+}
+
+/* Basic container styling */
+.container {
+  width: 100%;  /* Make sure the container spans the entire width */
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f8f8f8;  /* Light background color */
+  overflow: hidden;  /* Ensure no internal overflow within the container */
+}
+
+/* Default element styling */
+.element {
+  width: 100%;  /* Make the element responsive to the width of its container */
+  max-width: 100%;  /* Ensure the element never exceeds the container's width */
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.text-element {
+  word-wrap: break-word;  /* Prevent text overflow by breaking long words */
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* --- Media Query for Screens Smaller than 768px (Mobile) --- */
+@media (max-width: 768px) {
+
+  /* Adjust container padding for smaller screens */
+  .container {
+    padding: 10px;
+   
+  }
+
+  /* Adjust element styles */
+  .element {
+    width: 100%;  /* Take up full width of the container */
+    max-width: 100%;  /* Prevent overflow */
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* Adjust text element for mobile */
+  .text-element {
+    padding: 8px;
+    font-size: 14px;  /* Make text size smaller for smaller screens */
+  }
+
+}
+
+/* --- Media Query for Screens Smaller than 480px (Very Small Mobile Devices) --- */
+@media (max-width: 480px) {
+  
+  /* Further adjust padding and margins for very small screens */
+  .container {
+    padding: 5px;
+  }
+
+  .element {
+    padding: 8px;  /* Make padding smaller */
+    margin-bottom: 10px;  /* Reduce bottom margin */
+  }
+
+  .text-element {
+    padding: 6px;
+    font-size: 12px;  /* Smaller text size */
+  }
+}
+
+/* --- Example for Larger Screens (Tablets or Desktops) --- */
+@media (min-width: 768px) {
+  /* Adjust the layout for larger screens */
+  .container {
+    max-width: 1200px;
+    padding: 30px;
+  }
+
+  .element {
+    width: 48%;  /* Use 48% of the container width (two columns layout) */
+    margin-right: 4%;
+  }
+
+  .text-element {
+    font-size: 16px;  /* Normal text size for larger screens */
+  }
+
+  .element:nth-child(even) {
+    margin-right: 0;  /* Remove margin for the even element in a two-column layout */
+  }
+}
+
     
 
 
