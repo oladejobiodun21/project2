@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <title>Checkout</title>
     <style>
@@ -24,7 +23,7 @@
         margin-bottom: 20px;
         width: 70vh;
         height: 46vh;
-        margin-top: 200PX;
+        margin-top: 410PX;
       }
       .total-price {
         margin-top: 20px;
@@ -126,14 +125,125 @@
         margin-left: 470px;
       }
       #final-price {
-        background-color: rgb(54, 56, 65);
-        color: white;
-        width: 130%;
-        height: 12vh;
-        padding: 10px;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        width: 20%;
+        height: 8vh;
+        padding: 15px;
+        padding-left: 20px;
+        align-items: center;
         display: none;
-      margin-left: -30px;
+        left: 30%;
+      margin-top: 160px;
+      margin-left: 440px;
+      border-radius: 20px;
+      cursor: pointer;
+      display: inline-block;
+    transition: all 0.3s ease;
       }
+      /* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Container and Price Elements */
+.result-container {
+    position: relative;
+    margin: 20px;
+}
+
+
+
+
+/* Hover Effect Div */
+.hover-bg {
+    position: fixed;
+    top: 20px;
+    right: -120vh; /* Initially hidden off the screen */
+    width: 70vh;
+    height: 100%;
+    background-color: rgb(37, 38, 43);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Email and Name Form */
+.hover-bg h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: -100px;
+}
+.mss h2{
+  font-size: 14px;
+  margin-top: 120px;
+  color: rgb(255, 255, 255);
+padding-top: 30px;
+}
+
+.hover-bg input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid rgb(143,145,149);
+    border-radius: 5px;
+    margin-top: 18px;
+}
+
+#hover-bg .mo{
+  margin-top: 100px;
+  background-color: rgb(54,56,65);
+  width: 100%;
+}
+#hover-bg .mos{
+  /* margin-top: 100px; */
+  background-color: rgb(54,56,65);
+  width: 100%;
+}
+
+
+.error {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#cancel-btn {
+    padding: 8px 16px;
+   background-color: rgb(54,56,65);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 120px;
+      border: 1px solid rgb(143,145,149);
+}
+#cancel-btns {
+    padding: 8px 16px;
+   background-color: rgb(54,56,65);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    /* margin-top: 120px; */
+      border: 1px solid rgb(143,145,149);
+      margin-left: 210px;
+}
+
+      /* .result-container{
+        background-color: red;
+        width: 100%;
+        
+      } */
        
       .checkout-item h1 {
         font-size: 50px;
@@ -312,6 +422,7 @@
        margin-left: -50px;
        width: 120%;
          position: absolute;
+         margin-top: -390px;
 }
 
 .nav {
@@ -336,7 +447,7 @@
       .nav-menu a{
        padding-right: 20px;
        text-decoration: none;
-       margin-left: 70px;
+       margin-left: 89px;
       }
 
       .back-arrow {
@@ -346,7 +457,7 @@
         transform: translateX(-50%);
         cursor: pointer;
         margin-top: 150px;
-        margin-left: 30px;
+        margin-left: 59px;
         
       }
       .pp{
@@ -398,9 +509,10 @@
   color: white;
 }
  .logos {
-        font-size: 100px;
+        font-size: 80px;
         color: #61dafb;
         display: flex;
+        margin-left: 50px;
       }
 @media only screen and (max-width: 600px) {
   .content{
@@ -593,7 +705,25 @@
   }
    #final-price{
     margin-top: 390px;
-    height: 10vh;
+    height: 6vh;
+    width: 25vh;
+    margin-left: 90px;
+    white-space: nowrap;
+   }
+   .hover-bg{
+    width: 40vh;
+    overflow: hidden;
+   }
+   .mss h2{
+    margin-top: 30%;
+    margin-left: 40px;
+   }
+   .hover-bg h1{
+    white-space: nowrap;
+    /* margin-left: 30px; */
+   }
+   body{
+    overflow-x: hidden;
    }
      
     
@@ -887,10 +1017,28 @@ body {
       </div>
     </div>
 
-    <div class="result-container" id="result">
-      <div id="final-price" class="po">Total Checkout Price: $0</div>
-    </div>
-    <div class="total-price" id="total-price">Total Price: #0</div>
+   <div class="result-container" id="result">
+    <div id="final-price" class="po">Total Checkout Price: $0</div>
+</div>
+
+<div class="total-price" id="total-price">Total Price: $0</div>
+
+<!-- Background Div with Form -->
+<div id="hover-bg" class="hover-bg">
+    <div class="mss">
+  <h2>Enter your email and name so we can send your ticket</h2>
+    <h1>Purchase ticket · Step 1 of 2</h1>
+    <input type="text" id="name" placeholder="Enter your name" class="mo">
+    <input type="email" id="email" placeholder="Enter your email address"class="mos">
+    <div id="error-message" class="error"></div>
+    <button id="cancel-btn">Cancel</button >
+      <button id="cancel-btns">Continue</button >
+  
+</div>
+</div>
+
+
+
 
     <script>
       
@@ -912,6 +1060,12 @@ body {
             letters.forEach((letter, index) => {
                 letter.style.animationDelay = `${index * 0.5}s`;
             });
+            function handleClick() {
+  alert("You clicked on the Total Checkout Price!");
+  // You can also perform other actions here, like redirecting or updating values
+  // window.location.href = 'https://your-link-here.com'; // Example redirect
+}
+
 
 
 
@@ -950,6 +1104,51 @@ body {
         finalPriceElement.innerText = `Total Checkout Price: #${totalPrice}`; // Show total price
         finalPriceElement.style.display = totalPrice > 0 ? "block" : "none"; // Show only if there's a total
       }
+      // Selecting elements
+const finalPrice = document.getElementById('final-price');
+const hoverBg = document.getElementById('hover-bg');
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
+const cancelBtn = document.getElementById('cancel-btn');
+
+let isClicked = false;
+
+// Hover effect for the final price
+finalPrice.addEventListener('mouseenter', () => {
+    if (!isClicked) {
+        hoverBg.style.right = '0';
+    }
+});
+
+finalPrice.addEventListener('mouseleave', () => {
+    if (!isClicked) {
+        hoverBg.style.right = '-60vh';
+    }
+});
+
+// Click behavior to keep the background visible
+finalPrice.addEventListener('click', () => {
+    isClicked = true;
+    hoverBg.style.right = '0';
+});
+
+// Cancel button to hide the background
+cancelBtn.addEventListener('click', () => {
+    isClicked = false;
+    hoverBg.style.right = '-60vh';
+});
+
+// Email validation
+emailInput.addEventListener('input', () => {
+    const email = emailInput.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        errorMessage.textContent = 'Please enter a valid email address.';
+    } else {
+        errorMessage.textContent = '';
+    }
+});
+
 
       // Initialize display on page load
       document.addEventListener("DOMContentLoaded", () => {
@@ -958,6 +1157,10 @@ body {
       function goBack() {
       window.location.href = "boo.html";
 }
+function handleClick() {
+  window.location.href = 'big night.html';
+}
+
 
     </script>
   </body>
