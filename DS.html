@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="media.css">
     <title>Checkout</title>
     <style>
       body {
@@ -347,24 +346,24 @@ padding-top: 30px;
         color: white;
       }
       .price-containers img {
-        margin-top: -39px;
-        margin-left: 50px;
+      margin-top: -59px;
+        margin-left: -30px;
       }
       .price-containerss img {
-        margin-top: -39px;
-        margin-left: 50px;
+     margin-top: -59px;
+        margin-left: 10px;
       }
       .price-containersss img {
-        margin-top: -39px;
-        margin-left: 50px;
+        margin-top: -59px;
+        margin-left: -30px;
       }
       .price-containerssss img {
         margin-top: -59px;
-        margin-left: 50px;
+        margin-left: 10px;
       }
       .price-containersssss img {
-        margin-top: -59px;
-        margin-left: 50px;
+        margin-top: -69px;
+        margin-left: -30px;
       }
       .logo-container {
         display: flex;
@@ -516,14 +515,15 @@ padding-top: 30px;
       }
 @media only screen and (max-width: 600px) {
   .content{
-    width: 107%;
+    width: 115%;
     height: 20vh;
     overflow-x: hidden;
+    margin-top: 30px;
     
   }
   .logos{
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: bold;
   }
   .nav-menu{
@@ -550,33 +550,51 @@ padding-top: 30px;
  
    }
    .checkout-section{
-    width: 30vh;
-    height: 20vh;
+    width: 40vh;
+    height: 22vh;
     margin-top: 300px;
-    margin-left: -10px;
+    margin-left: 10px;
    }
    .checkout-item h1{
-    font-size: 20px;
+    font-size: 26px;
+    letter-spacing: 5px;
+   }
+   .checkout-item .controls{
+    color: white;
+    margin-top:8px;
+   }
+   .checkout-item p{
+    color: white;
+    margin-top: 10px;
+   }
+  #total-price{
+    color: rgb(255, 255, 255);
+    margin-top:13px;
    }
    .title{
     font-size:  30px;
       white-space: nowrap;
-      margin-left: 70px;
+      margin-left: 120px;
+      margin-top: 120px;
+      z-index: 999999;
    }
    .them h2{
     white-space: nowrap;
     font-size: 24px;
-    margin-left: -10px;
+    margin-left: 30px;
    }
     .sections{
-    width: 25vh;
+    width: 21vh;
         height: 23vh;
-        margin-left: -7px;
+        margin-left: 5px;
+      
         
        
    }
     .price-containers img {
    margin-left:10px;
+  
+  
   
    }
    .price-containerss img{
@@ -594,6 +612,9 @@ padding-top: 30px;
    .pp{
         width: 18vh;
         height: 15vh;
+        margin-top: -50px;
+       
+ 
         
       }
       .ppp{
@@ -624,9 +645,14 @@ padding-top: 30px;
       }
      
       .price-containers h1{
-        font-size: 15px;
-        margin-top: 2px;
+        font-size: 13px;
+        margin-top: 3px;
         margin-left: 20px;
+        white-space: nowrap;
+      }
+      .price-containers .controlss{
+        margin-left: -99px;
+        font-size: 15px;
       }
       .price-containerss h1{
         font-size: 15px;
@@ -634,26 +660,27 @@ padding-top: 30px;
         margin-left: 14px;
       }
       .price-containers p{
-        margin-top: -4px;
+        margin-top: 4px;
+        margin-left: 27px;
       }
        .price-containerss p{
         margin-top: -4px;
       }
       .price-containerss{
-        width: 25vh;
+        width: 21vh;
         height: 23vh;
-        margin-left: 270px;
-        margin-top: -200px;
+        margin-left: 230px;
+        margin-top: -220px;
       }
        .price-containersss{
-        width: 25vh;
+      width: 21vh;
         height: 23vh;
-        margin-left: -5px;
+        margin-left: 3px;
         margin-top: 140px;
        
       }
       .price-containersssss{
-        width: 25vh;
+        width: 21vh;
         height: 23vh;
         margin-left: -5px;
         margin-left: 270px;
@@ -661,10 +688,78 @@ padding-top: 30px;
         margin-top: 140px;
        
       }
+      /* 1. Global Reset and Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Prevent Horizontal Overflow */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 3. Responsive Container */
+.container {
+  max-width: 100%;
+  width: 100vw;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* 4. Responsive Media Elements (Images, Videos) */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Handling Long Text Overflow */
+.word-break {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* 6. Flexbox Fix (Prevent Overflow) */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex-item {
+  flex: 1 1 auto;
+  min-width: 0; /* Allows items to shrink without causing overflow */
+}
+
+/* 7. Grid Layout Fix */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* 8. Scrollable Content (Optional) */
+.scrollable {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* 9. Hide Overflow (If Needed) */
+.hide-overflow {
+  overflow: hidden;
+}
+
         .price-containerssss{
-        width: 25vh;
+        width: 21vh;
         height: 23vh;
-        margin-left: -5px;
+        margin-left: 3px;
       
         /* background-color: red; */
         margin-top: 140px;
@@ -672,13 +767,17 @@ padding-top: 30px;
       }
       .price-containersss h1{
         font-size: 15px;
-        margin-top: 5px;
+        margin-top: -5px;
         
         margin-left: 14px;
       }
       .price-containersss p{
-        margin-top: -4px;
-        margin-left: 40px;
+        margin-top: 6px;
+        margin-left: 30px;
+      }
+      .price-containersss .controlss{
+        margin-left: -96px;
+        font-size: 15px;
       }
 
        .price-containerssss h1{
@@ -725,6 +824,7 @@ padding-top: 30px;
    body{
     overflow-x: hidden;
    }
+   
      
     
   
@@ -769,73 +869,7 @@ body {
   color: white;
 }
 
-/* --- Media Query for Screens Smaller than 768px (Mobile) --- */
-@media (max-width: 768px) {
 
-  /* Adjust container padding for smaller screens */
-  .container {
-    padding: 10px;
-   
-  }
-
-  /* Adjust element styles */
-  .element {
-    width: 100%;  /* Take up full width of the container */
-    max-width: 100%;  /* Prevent overflow */
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-
-  /* Adjust text element for mobile */
-  .text-element {
-    padding: 8px;
-    font-size: 14px;  /* Make text size smaller for smaller screens */
-  }
-
-}
-
-/* --- Media Query for Screens Smaller than 480px (Very Small Mobile Devices) --- */
-@media (max-width: 480px) {
-  
-  /* Further adjust padding and margins for very small screens */
-  .container {
-    padding: 5px;
-  }
-
-  .element {
-    padding: 8px;  /* Make padding smaller */
-    margin-bottom: 10px;  /* Reduce bottom margin */
-  }
-
-  .text-element {
-    padding: 6px;
-    font-size: 12px;  /* Smaller text size */
-  }
-}
-
-/* --- Example for Larger Screens (Tablets or Desktops) --- */
-@media (min-width: 768px) {
-  /* Adjust the layout for larger screens */
-  .container {
-    max-width: 1200px;
-    padding: 30px;
-  }
-
-  .element {
-    width: 48%;  /* Use 48% of the container width (two columns layout) */
-    margin-right: 4%;
-  }
-
-  .text-element {
-    font-size: 16px;  /* Normal text size for larger screens */
-  }
-
-  .element:nth-child(even) {
-    margin-right: 0;  /* Remove margin for the even element in a two-column layout */
-  }
-}
-
-    
 
 
       /* .controls span {
@@ -912,7 +946,7 @@ body {
             ></span>
           </div>
         </div>
-        <div class="total-price" id="total-price">Total Price: $0</div>
+        <div class="total-price" id="total-price">#5000</div>
       </div>
       <div class="them">
         <h2>Food & drinks</h2>

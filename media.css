@@ -1,0 +1,690 @@
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 115%;
+        height: 20vh;
+        overflow-x: hidden;
+        margin-top: 30px;
+
+    }
+
+    .logos {
+        font-size: 20px;
+        margin-left: 40px;
+        font-size: bold;
+    }
+
+    .nav-menu {
+        font-size: 9px;
+        white-space: nowrap;
+        margin-left: -70px;
+        display: flex;
+        gap: 5px;
+        margin-right: 10%;
+        text-decoration: none;
+        font-weight: bold;
+        /* padding-left: 70px; */
+
+        /* flex-wrap: nowrap; */
+
+    }
+
+    .nav-menu a {
+        display: flex;
+        padding-right: 64px;
+        text-decoration: none;
+        margin-right: -100px;
+        /* padding-left: -70px; */
+        font-weight: bold;
+
+    }
+
+    .checkout-section {
+    width: 40vh;
+        height: 20vh;
+        margin-top: 300px;
+        margin-left: 10px;
+    }
+
+    .checkout-item h1 {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 30px;
+        white-space: nowrap;
+        margin-left: 120px;
+        margin-top: 120px;
+        z-index: 999999;
+    }
+
+    .them h2 {
+        white-space: nowrap;
+        font-size: 24px;
+        margin-left: 30px;
+    }
+
+    .sections {
+        width: 21vh;
+        height: 23vh;
+        margin-left: 5px;
+
+
+
+    }
+
+    .price-containers img {
+        margin-left: 10px;
+
+    }
+
+    .price-containerss img {
+        margin-left: 18px;
+    }
+
+    .price-containersss img {
+        margin-left: 10px;
+    }
+
+    .price-containerssss img {
+        margin-left: 10px;
+    }
+
+    .price-containersssss img {
+        margin-left: 18px;
+    }
+
+    .pp {
+        width: 18vh;
+        height: 15vh;
+        margin-top: 50px;
+
+    }
+
+    .ppp {
+        width: 15vh;
+        height: 15vh;
+
+
+    }
+
+    .pppp {
+        width: 18vh;
+        height: 15vh;
+        margin-left: -25px;
+    }
+
+    .ppppp {
+        width: 18vh;
+        height: 15vh;
+        margin-left: -25px;
+
+    }
+
+    /* .sections-ppppp{
+        margin-left: 90px;
+      }
+    */
+
+    .pop {
+        width: 18vh;
+        height: 15vh;
+    }
+
+    .price-containers h1 {
+        font-size: 13px;
+        margin-top: 3px;
+        margin-left: 20px;
+        white-space: nowrap;
+    }
+
+    .price-containers .controlss {
+        margin-left: -99px;
+        font-size: 15px;
+    }
+
+    .price-containerss h1 {
+        font-size: 15px;
+        margin-top: 2px;
+        margin-left: 14px;
+    }
+
+    .price-containers p {
+        margin-top: 4px;
+        margin-left: 27px;
+    }
+
+    .price-containerss p {
+        margin-top: -4px;
+    }
+
+    .price-containerss {
+        width: 21vh;
+        height: 23vh;
+        margin-left: 230px;
+        margin-top: -200px;
+    }
+
+    .price-containersss {
+        width: 21vh;
+        height: 23vh;
+        margin-left: 3px;
+        margin-top: 140px;
+
+    }
+
+    .price-containersssss {
+        width: 21vh;
+        height: 23vh;
+        margin-left: -5px;
+        margin-left: 270px;
+        /* background-color: red; */
+        margin-top: 140px;
+
+    }
+
+    /* 1. Global Reset and Box-Sizing */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 2. Prevent Horizontal Overflow */
+    html,
+    body {
+        width: 100%;
+        /* overflow-x: hidden; */
+    }
+
+    /* 3. Responsive Container */
+    .container {
+        max-width: 100%;
+        width: 100vw;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    /* 4. Responsive Media Elements (Images, Videos) */
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* 5. Handling Long Text Overflow */
+    .word-break {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    /* 6. Flexbox Fix (Prevent Overflow) */
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .flex-item {
+        flex: 1 1 auto;
+        min-width: 0;
+        /* Allows items to shrink without causing overflow */
+    }
+
+    /* 7. Grid Layout Fix */
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* 8. Scrollable Content (Optional) */
+    .scrollable {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* 9. Hide Overflow (If Needed) */
+    .hide-overflow {
+        overflow: hidden;
+    }
+
+    .price-containerssss {
+        width: 21vh;
+        height: 23vh;
+        margin-left: 3px;
+
+        /* background-color: red; */
+        margin-top: 140px;
+
+    }
+
+    .price-containersss h1 {
+        font-size: 15px;
+        margin-top: -5px;
+
+        margin-left: 14px;
+    }
+
+    .price-containersss p {
+        margin-top: 6px;
+        margin-left: 30px;
+    }
+
+    .price-containersss .controlss {
+        margin-left: -96px;
+        font-size: 15px;
+    }
+
+    .price-containerssss h1 {
+        font-size: 15px;
+        margin-top: 5px;
+
+        margin-left: 24px;
+    }
+
+    .price-containerssss p {
+        margin-top: 4px;
+        margin-left: 40px;
+    }
+
+    .price-containersssss h1 {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    .price-containersssssp {
+        margin-top: -4px;
+        margin-left: 40px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #final-price {
+        margin-top: 390px;
+        height: 6vh;
+        width: 25vh;
+        margin-left: 90px;
+        white-space: nowrap;
+    }
+
+    .hover-bg {
+        width: 40vh;
+        overflow: hidden;
+    }
+
+    .mss h2 {
+        margin-top: 30%;
+        margin-left: 40px;
+    }
+
+    .hover-bg h1 {
+        white-space: nowrap;
+        /* margin-left: 30px; */
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+
+}
+
+
+/* ::view-transition-new */
+
+@media (max-width: 768px) {
+
+    /* Adjust container padding for smaller screens */
+    .container {
+        padding: 10px;
+
+    }
+
+    /* Adjust element styles */
+    .element {
+        width: 100%;
+        /* Take up full width of the container */
+        max-width: 100%;
+        /* Prevent overflow */
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* Adjust text element for mobile */
+    .text-element {
+        padding: 8px;
+        font-size: 14px;
+        /* Make text size smaller for smaller screens */
+    }
+
+}
+
+/* --- Media Query for Screens Smaller than 480px (Very Small Mobile Devices) --- */
+@media (max-width: 480px) {
+
+    /* Further adjust padding and margins for very small screens */
+    .container {
+        padding: 5px;
+    }
+
+    .element {
+        padding: 8px;
+        /* Make padding smaller */
+        margin-bottom: 10px;
+        /* Reduce bottom margin */
+    }
+
+    .text-element {
+        padding: 6px;
+        font-size: 12px;
+        /* Smaller text size */
+    }
+}
+
+/* --- Example for Larger Screens (Tablets or Desktops) --- */
+@media (min-width: 768px) {
+
+    /* Adjust the layout for larger screens */
+    .container {
+        max-width: 1200px;
+        padding: 30px;
+    }
+
+    .element {
+        width: 48%;
+        /* Use 48% of the container width (two columns layout) */
+        margin-right: 4%;
+    }
+
+    .text-element {
+        font-size: 16px;
+        /* Normal text size for larger screens */
+    }
+
+    .element:nth-child(even) {
+        margin-right: 0;
+        /* Remove margin for the even element in a two-column layout */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+
+    .checkout-item h1 {
+        font-size: 1.2rem;
+    }
+
+    .price-containers,
+    .price-containerss,
+    .price-containersss,
+    .price-containerssss,
+    .price-containersssss {
+        flex: 1 1 100%;
+    }
+
+    .mss {
+        width: 100%;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+    }
+
+    .price-containers,
+    .price-containerss,
+    .price-containersss,
+    .price-containerssss,
+    .price-containersssss {
+        flex: 1 1 45%;
+    }
+}
+
+/* For Desktops */
+@media only screen and (min-width: 769px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .checkout-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .price-containers,
+    .price-containerss,
+    .price-containersss,
+    .price-containerssss,
+    .price-containersssss {
+        flex: 1 1 30%;
+    }
+}
+
+/* Tablet Portrait Mode (600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    /* Adjust the title size */
+    .title {
+        font-size: 2.2rem;
+    }
+
+    /* Navigation Menu */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+    }
+
+    /* Checkout Section */
+    .checkout-section {
+        padding: 20px;
+    }
+
+    /* Food and Drink Items */
+    .price-containers,
+    .price-containerss,
+    .price-containersss,
+    .price-containerssss,
+    .price-containersssss {
+        flex: 1 1 48%;
+        /* Two items per row */
+        margin-bottom: 20px;
+    }
+
+    /* Image Scaling */
+    img.pp,
+    img.ppp,
+    img.pppp,
+    img.pop,
+    img.ppppp {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Form Container */
+    .mss {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Tablet Landscape Mode (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Title Size */
+    .title {
+        font-size: 2.5rem;
+    }
+
+    /* Navigation Menu */
+    .nav-menu a {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+
+    /* Layout Adjustments */
+    .checkout-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .price-containers,
+    .price-containerss,
+    .price-containersss,
+    .price-containerssss,
+    .price-containersssss {
+        flex: 1 1 45%;
+        /* Two items per row */
+        margin-bottom: 20px;
+    }
+
+    /* Image Scaling */
+    img.pp,
+    img.ppp,
+    img.pppp,
+    img.pop,
+    img.ppppp {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    /* Form Container */
+    .mss {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+/* Small Laptops (1025px to 1366px) */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    /* Title and Text Adjustments */
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 1.2rem;
+    }
+
+    /* Layout Adjustments */
+    .checkout-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    /* Food and Drink Items */
+    .price-containers,
+    .price-containerss,
+    .price-containersss,
+    .price-containerssss,
+    .price-containersssss {
+        flex: 1 1 30%;
+        /* Three items per row */
+        margin-bottom: 30px;
+    }
+
+    /* Image Styling */
+    img.pp,
+    img.ppp,
+    img.pppp,
+    img.pop,
+    img.ppppp {
+        width: 100%;
+        max-height: 300px;
+        border-radius: 10px;
+    }
+
+    /* Form Container */
+    .mss {
+        width: 70%;
+        max-width: 600px;
+    }
+}
+
+/* Standard Laptops (1367px to 1600px) */
+@media only screen and (min-width: 1367px) and (max-width: 1600px) {
+
+    /* Title and Text Adjustments */
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .nav-menu {
+        gap: 25px;
+    }
+
+    .nav-menu a {
+        font-size: 1.3rem;
+    }
+
+    /* Layout Adjustments */
+    .checkout-section {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .price-containers,
+    .price-containerss,
+    .price-containersss,
+    .price-containerssss,
+    .price-containersssss {
+        flex: 1 1 28%;
+        /* Three items per row with more spacing */
+    }
+
+    /* Image Styling */
+    img.pp,
+    img.ppp,
+    img.pppp,
+    img.pop,
+    img.ppppp {
+        width: 100%;
+        max-height: 350px;
+    }
+
+    /* Form Container */
+    .mss {
+        width: 60%;
+        max-width: 700px;
+    }
+}
