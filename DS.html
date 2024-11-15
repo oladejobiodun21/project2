@@ -26,6 +26,8 @@
       }
       .total-price {
         margin-top: 20px;
+        color: WHITE;
+       
       }
       .sections {
         background-color: rgb(54, 56, 65);
@@ -161,7 +163,7 @@ body {
 .hover-bg {
     position: fixed;
     top: 20px;
-    right: -120vh; /* Initially hidden off the screen */
+    right: -120vh; 
     width: 70vh;
     height: 100%;
     background-color: rgb(37, 38, 43);
@@ -174,19 +176,25 @@ body {
     transition: right 0.3s ease;
     overflow: hidden;
     border-radius: 15px;
+    margin-right: 20px;
 }
 
 /* Email and Name Form */
 .hover-bg h1 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-top: -150px;
     margin-top: -100px;
+    margin-left: -60px;
+    font-weight: lighter;
+   
 }
 .mss h2{
   font-size: 14px;
-  margin-top: 120px;
+  margin-top: 20px;
   color: rgb(255, 255, 255);
 padding-top: 30px;
+ white-space: nowrap;
+ margin-left: -60px;
 }
 
 .hover-bg input {
@@ -201,12 +209,16 @@ padding-top: 30px;
 #hover-bg .mo{
   margin-top: 100px;
   background-color: rgb(54,56,65);
-  width: 100%;
+  width: 132%;
+  color: white;
+  margin-left: -55px;
 }
 #hover-bg .mos{
   /* margin-top: 100px; */
   background-color: rgb(54,56,65);
-  width: 100%;
+ width: 132%;
+  color: white;
+  margin-left: -55px;
 }
 
 
@@ -247,6 +259,7 @@ padding-top: 30px;
       .checkout-item h1 {
         font-size: 50px;
         color: rgb(255, 255, 255);
+        /* margin-top: +15PX; */
       }
       .price-containerss h1 {
         color: white;
@@ -342,8 +355,13 @@ padding-top: 30px;
         color: white;
         margin-left: -130px;
       }
+      .controls{
+        color: white;
+        /* margin-top:30px; */
+      }
       .checkout-item p {
         color: white;
+        margin-top: -30PX;
       }
       .price-containers img {
       margin-top: -59px;
@@ -499,6 +517,7 @@ padding-top: 30px;
         font-size: 50px;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        z-index: auto;
       }
 .back-arrow {
   cursor: pointer;
@@ -591,32 +610,44 @@ padding-top: 30px;
         
        
    }
+   .back-arrow {
+    margin-top: 120px;
+   }
+   .title{
+    z-index: auto;
+    margin-top: 190px;
+   }
     .price-containers img {
-   margin-left:10px;
+   margin-left:-10px;
+   padding-top: -130px;
   
   
   
    }
    .price-containerss img{
     margin-left: 18px;
+
    }
    .price-containersss img{
-    margin-left:10px;
+    margin-left:-15px;
    }
    .price-containerssss img{
     margin-left:10px;
+    
    }
    .price-containersssss img{
-     margin-left: 18px;
+     margin-left: -18px;
    }
    .pp{
         width: 18vh;
         height: 15vh;
-        margin-top: -50px;
+         margin-top: -20vh; 
+      
        
  
         
       }
+
       .ppp{
         width: 15vh;
         height: 15vh;
@@ -634,6 +665,7 @@ padding-top: 30px;
        margin-left: -25px;
    
       }
+      
       /* .sections-ppppp{
         margin-left: 90px;
       }
@@ -642,36 +674,51 @@ padding-top: 30px;
       .pop{
         width: 18vh;
         height: 15vh;
+     
       }
      
       .price-containers h1{
-        font-size: 13px;
-        margin-top: 3px;
+        font-size: 10px;
+        margin-top: 5px;
         margin-left: 20px;
         white-space: nowrap;
+       
       }
       .price-containers .controlss{
-        margin-left: -99px;
-        font-size: 15px;
+        margin-left: -120px;
+        font-size: 10px;
+        gap: 5;
+        margin-top: 5px;
+       
       }
       .price-containerss h1{
-        font-size: 15px;
-        margin-top: 2px;
+       font-size: 10px;
+        margin-top: -3px;
         margin-left: 14px;
       }
       .price-containers p{
-        margin-top: 4px;
-        margin-left: 27px;
+        margin-top: 10px;
+        margin-left: 29px;
+        font-size: 9px;
       }
        .price-containerss p{
-        margin-top: -4px;
+        margin-top: 4px;
+         font-size: 10px;
+         margin-left: 50px;
       }
+      
       .price-containerss{
         width: 21vh;
         height: 23vh;
         margin-left: 230px;
-        margin-top: -220px;
+        margin-top: -200px;
       }
+       .price-containerss .controlss{
+         font-size: 10px;
+        gap: 5;
+        margin-left: -110px;
+        margin-top: 14px;
+       }
        .price-containersss{
       width: 21vh;
         height: 23vh;
@@ -682,10 +729,9 @@ padding-top: 30px;
       .price-containersssss{
         width: 21vh;
         height: 23vh;
-        margin-left: -5px;
-        margin-left: 270px;
+        margin-left: 230px;
         /* background-color: red; */
-        margin-top: 140px;
+        margin-top: 150px;
        
       }
       /* 1. Global Reset and Box-Sizing */
@@ -766,38 +812,58 @@ video {
        
       }
       .price-containersss h1{
-        font-size: 15px;
+        font-size: 10px;
         margin-top: -5px;
         
         margin-left: 14px;
       }
       .price-containersss p{
-        margin-top: 6px;
+        margin-top: 9px;
         margin-left: 30px;
+         font-size: 10px;
       }
       .price-containersss .controlss{
-        margin-left: -96px;
-        font-size: 15px;
+        margin-left: -110px;
+           font-size: 10px;
+        gap: 5;
+        
       }
+       .price-containersssss .controlss{
+           font-size: 10px;
+        gap: 5;
+        margin-left: -90px;
+       }
+       .price-containerssss .controlss{
+           font-size: 10px;
+        gap: 5;
+        margin-top: 8px;
+        margin-left: -120px;
+       
+       }
+      /* .controlss{
+        font-size: 10px;
+      } */
 
        .price-containerssss h1{
-        font-size: 15px;
-        margin-top: 5px;
+        font-size: 12px;
+        margin-top: -5px;
         
         margin-left: 24px;
       }
       .price-containerssss p{
-        margin-top: 4px;
+        margin-top: 9px;
         margin-left: 40px;
+        font-size: 10px;
       }
      .price-containersssss h1{
-        font-size: 15px;
-        margin-top: 5px;
+        font-size: 13px;
+        margin-top: -2px;
         margin-left: 20px;
       }
-      .price-containersssssp{
-        margin-top: -4px;
+      .price-containersssss p{
+        margin-top: 7px;
         margin-left: 40px;
+      font-size: 12px;
       }
        body {
     overflow-x: hidden;
@@ -829,6 +895,7 @@ video {
     
   
 }
+
 
 /* Global styles */
 *,
@@ -1055,7 +1122,7 @@ body {
     <div id="final-price" class="po">Total Checkout Price: $0</div>
 </div>
 
-<div class="total-price" id="total-price">Total Price: $0</div>
+<!-- <div class="total-price" id="total-price">Total Price: $0</div> -->
 
 <!-- Background Div with Form -->
 <div id="hover-bg" class="hover-bg">
@@ -1066,11 +1133,11 @@ body {
     <input type="email" id="email" placeholder="Enter your email address"class="mos">
     <div id="error-message" class="error"></div>
     <button id="cancel-btn">Cancel</button >
-      <button id="cancel-btns">Continue</button >
+    <button id="cancel-btns">Continue</button >
   
 </div>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
 
@@ -1090,6 +1157,9 @@ body {
             const letters = document.querySelectorAll(".letter");
             const content = document.querySelector(".content");
             const foodSections = document.getElementById("food-sections");
+            const userName = document.getElementById('name')
+            const userMail = document.getElementById('email')
+            const submitBtn = document.getElementById('cancel-btns')
 
             letters.forEach((letter, index) => {
                 letter.style.animationDelay = `${index * 0.5}s`;
@@ -1101,7 +1171,29 @@ body {
 }
 
 
+   emailjs.init("BFUV47DCO0_qZisbf");
 
+  // Get the button element
+  submitBtn.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevents the default form submission
+
+    const emailParams = {
+      to_name: userName.value,
+      user_email: userMail.value, // This will be the recipient email
+      message: 'This is a test message from DreamScreen!',
+    };
+
+    // Send email using EmailJS
+    emailjs.send('service_q17z4cc', 'template_3jdkqqw', emailParams)
+      .then(response => {
+        console.log('Email sent successfully:', response.status, response.text);
+        alert("Email sent successfully");
+      })
+      .catch(error => {
+        console.error('Failed to send email:', error);
+        alert('Failed to send email');
+      });
+  });
 
       let ticketCount = 0;
       let foodCounts = [0, 0, 0, 0, 0]; // Array to hold counts for each food item
@@ -1199,3 +1291,4 @@ function handleClick() {
     </script>
   </body>
 </html>
+

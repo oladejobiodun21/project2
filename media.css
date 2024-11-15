@@ -75,6 +75,7 @@
 
     .price-containers img {
         margin-left: 10px;
+       
 
     }
 
@@ -196,7 +197,7 @@
     html,
     body {
         width: 100%;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
 
     /* 3. Responsive Container */
@@ -680,6 +681,7 @@
     img.ppppp {
         width: 100%;
         max-height: 350px;
+        
     }
 
     /* Form Container */

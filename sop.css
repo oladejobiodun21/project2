@@ -352,6 +352,19 @@ body {
        
        
     }
+        /* @media screen and (min-width: 360px) {
+            .hero-slide-item img {
+                    height: 55vh;
+                    width: 100%;
+                    filter: blur(1px);
+                }
+                .CAST{
+                    margin-top: 50px;
+                }
+                .hamburger-menu{
+                    margin-left: 320px;
+                }
+        } */
         /* /* @media only screen and (max-width: 1280px) {
           html {
             font-size: 14px;
