@@ -79,3 +79,6 @@ function books() {
 function bookss() {
   window.location.href = "boo.html";
 }
+function booksss() {
+  window.location.href = "b.html";
+}

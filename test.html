@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPay Payment - Payment Methods</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6;
+        color: #333;
+      }
+
+      .opay-section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: linear-gradient(to bottom, #ffffff, #e9ecef);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Top background elements */
+      .top-backgrounds {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+      }
+
+      .top-background {
+        width: 40px;
+        height: 10px;
+        border-radius: 5px;
+      }
+
+      .top-background-1 {
+        background-color: #ff6f61;
+      }
+
+      .top-background-2 {
+        background-color: #4caf50;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #222;
+      }
+
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #444;
+      }
+
+      .payment-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 30px 0;
+      }
+
+      .payment-option {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        transition: all 0.3s ease;
+      }
+
+      .payment-option:hover {
+        transform: scale(1.02);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .icon-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(to right, #ffc107, #ffeb3b);
+        border: 2px solid #f44336;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+
+      .payment-option.active {
+        background-color: #28a745;
+        color: white;
+        border-color: #28a745;
+      }
+
+      .payment-option.active .icon-circle {
+        background: white;
+        color: #28a745;
+      }
+
+      .pay-now-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 30px;
+        font-size: 20px;
+        color: white;
+        background: linear-gradient(to right, #007bff, #0056b3);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .pay-now-btn:hover {
+        transform: scale(1.05);
+        background: linear-gradient(to right, #0056b3, #003f7f);
+      }
+
+      .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s ease;
+      }
+
+      .loading-overlay.visible {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .loading-spinner {
+        border: 5px solid #f3f4f6;
+        border-top: 5px solid #007bff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .redirect-message {
+        color: #fff;
+        font-size: 18px;
+        margin-top: 15px;
+      }
+
+      .ticket-message {
+        margin-top: 20px;
+        font-size: 18px;
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- OPay Payment Section (First Page) -->
+    <div class="opay-section" id="opay-payment-page">
+      <div class="top-backgrounds">
+        <div class="top-background top-background-1"></div>
+        <div class="top-background top-background-2"></div>
+      </div>
+      <h1>Payment Method</h1>
+      <p class="price">Price: $100</p>
+      <p>Choose payment method below:</p>
+      <div class="payment-methods">
+        <div class="payment-option" id="opay-wallet">
+          <div class="icon-circle">💼</div>
+          <span>OPayWallet</span>
+        </div>
+        <div class="payment-option" id="bank-transfer">
+          <div class="icon-circle">🏦</div>
+          <span>BankTransfer</span>
+        </div>
+        <div class="payment-option" id="bank-card">
+          <div class="icon-circle">💳</div>
+          <span>BankCard</span>
+        </div>
+        <div class="payment-option" id="bank-ussd">
+          <div class="icon-circle">📲</div>
+          <span>BankUssd</span>
+        </div>
+      </div>
+      <button class="pay-now-btn" id="pay-now-btn">Proceed to Payment</button>
+    </div>
+
+    <!-- OPay Payment - Amount Transferred Section (Second Page) -->
+    <div
+      class="opay-section"
+      id="amount-transferred-page"
+      style="display: none"
+    >
+      <div class="top-backgrounds">
+        <div class="top-background top-background-1"></div>
+        <div class="top-background top-background-2"></div>
+      </div>
+      <h1>OPay Payment</h1>
+      <p class="price">Price: $100</p>
+      <p>Your payment has been processed!</p>
+      <button class="pay-now-btn" id="amount-transferred-btn">
+        Amount Transferred
+      </button>
+      <div class="ticket-message" id="ticket-message"></div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+      <div>
+        <div class="loading-spinner"></div>
+        <div class="redirect-message">Processing Payment...</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS
+      emailjs.init("BFUV47DCO0_qZisbf");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const payNowBtn = document.getElementById("pay-now-btn");
+        const amountTransferredBtn = document.getElementById(
+          "amount-transferred-btn"
+        );
+        const loadingOverlay = document.getElementById("loading-overlay");
+        const ticketMessage = document.getElementById("ticket-message");
+        let selectedPaymentMethod = null;
+
+        // Add click event to each payment option
+        document.querySelectorAll(".payment-option").forEach((option) => {
+          option.addEventListener("click", () => {
+            // Remove active class from all options and add to selected one
+            document.querySelectorAll(".payment-option").forEach((opt) => {
+              opt.classList.remove("active");
+            });
+            option.classList.add("active");
+            selectedPaymentMethod = option.id;
+          });
+        });
+
+        // Handle Proceed to Payment button click (First Page)
+        payNowBtn.addEventListener("click", () => {
+          if (!selectedPaymentMethod) {
+            alert("Please select a payment method before proceeding.");
+            return;
+          }
+
+          // Show loading overlay
+          loadingOverlay.classList.add("visible");
+
+          // Simulate a redirect to the second page (Amount Transferred)
+          setTimeout(() => {
+            // Hide first page and show second page
+            document.getElementById("opay-payment-page").style.display = "none";
+            document.getElementById("amount-transferred-page").style.display =
+              "block";
+
+            // Hide loading overlay
+            loadingOverlay.classList.remove("visible");
+          }, 2000); // Simulate 2 seconds delay
+        });
+
+        // Handle Amount Transferred button click (Second Page)
+        amountTransferredBtn.addEventListener("click", () => {
+          // Show loading overlay
+          loadingOverlay.classList.add("visible");
+
+          // Simulate a successful transaction and show a success message after 2 seconds
+          setTimeout(() => {
+            // Display success message
+            ticketMessage.textContent = "Ticket Booked Successfully!";
+
+            // Send email notification using EmailJS
+            const emailParams = {
+              user_name: "User Name", // Replace with actual user name
+              user_email: "user@example.com", // Replace with the recipient email
+              message: "Your ticket has been booked successfully.",
+            };
+
+            emailjs
+              .send("service_q17z4cc", "template_3jdkqqw", emailParams)
+              .then((response) => {
+                console.log(
+                  "Email sent successfully:",
+                  response.status,
+                  response.text
+                );
+              })
+              .catch((error) => {
+                console.error("Failed to send email:", error);
+              });
+
+            // Hide loading overlay after success
+            loadingOverlay.classList.remove("visible");
+          }, 2000); // Simulate 2 seconds delay for successful transaction
+        });
+      });
+    </script>
+  </body>
+</html>
