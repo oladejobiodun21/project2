@@ -244,10 +244,12 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script>
       // Initialize EmailJS
-      emailjs.init("BFUV47DCO0_qZisbf");
+
+      emailjs.init("-jzwlQKSAp2nGQZhm");
 
       document.addEventListener("DOMContentLoaded", () => {
         const payNowBtn = document.getElementById("pay-now-btn");
@@ -269,7 +271,6 @@
             selectedPaymentMethod = option.id;
           });
         });
-
         // Handle Proceed to Payment button click (First Page)
         payNowBtn.addEventListener("click", () => {
           if (!selectedPaymentMethod) {
@@ -294,6 +295,9 @@
 
         // Handle Amount Transferred button click (Second Page)
         amountTransferredBtn.addEventListener("click", () => {
+          let paymentInfo = JSON.parse(localStorage.getItem("paymentInfo"));
+          console.log(paymentInfo);
+
           // Show loading overlay
           loadingOverlay.classList.add("visible");
 
@@ -304,8 +308,8 @@
 
             // Send email notification using EmailJS
             const emailParams = {
-              user_name: "User Name", // Replace with actual user name
-              user_email: "user@example.com", // Replace with the recipient email
+              user_name: paymentInfo.name, // Replace with actual user name
+              user_email: paymentInfo.mail, // Replace with the recipient email
               message: "Your ticket has been booked successfully.",
             };
 
@@ -317,15 +321,26 @@
                   response.status,
                   response.text
                 );
+                alert("Ticket Booked Successfully!");
               })
               .catch((error) => {
                 console.error("Failed to send email:", error);
+                alert("Failed to send email. Please try again.");
               });
 
             // Hide loading overlay after success
             loadingOverlay.classList.remove("visible");
           }, 2000); // Simulate 2 seconds delay for successful transaction
         });
+      });
+
+      // Add click event listener to "Proceed to Payment" button
+      document.getElementById("pay-now-btn").addEventListener("click", () => {
+        // Set a session flag to allow access to the card transfer page
+        sessionStorage.setItem("proceedToPayment", "true");
+
+        // Redirect to the card transfer page
+        window.location.href = "card.html"; // Update path if necessary
       });
     </script>
   </body>
